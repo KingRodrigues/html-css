@@ -1,0 +1,47 @@
+:root {
+    --red: #BF232C;
+    --gray: #7B8487;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background: url(../imagens/animus-login.png);
+    background-size: cover;
+    background-position: center;
+}
+
+p {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+ol, li {
+    margin-left: 35px ;
+}
+
+.titulo {
+    font-size: 50px;
+    margin: 20px 35px 15px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.memorias a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    transition: color 1s, transform 1s;
+}
+
+.memorias a:hover,
+.memorias a:focus {
+    text-decoration: underline;
+    color: var(--red);
+    margin: 5px;
+    outline: none;
+}

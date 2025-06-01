@@ -1,0 +1,93 @@
+:root {
+      --green: #B7CA81;
+      --green-light: #A0D6A1;
+      --pink: #D08791;
+    }
+
+    /* 🖼 Fundo com gradiente */
+    html {
+      background: linear-gradient(to bottom right, #DDE8E2AA, #DDD9C5AA);
+      height: 100%;
+      display: flex; /* Centraliza verticalmente com body */
+    }
+
+    /* 🧍 Centralização horizontal */
+    body {
+      margin: auto;
+    }
+
+    /* 👶 Baby Yoda (cabeça/corpo) */
+    .baby-yoda {
+      width: 6em;
+      height: 4em;
+      border-radius: 3em 3em 4.5em 4.5em; /* Arredondamento da cabeça */
+      background: var(--green);
+      position: relative;
+
+      /* 👁 Olhos usando múltiplos gradientes */
+      background-image: 
+        radial-gradient(circle at 1.5em, #fff, #fff .25em, transparent .3em), /* Brilho */
+        radial-gradient(circle at 1em, #000, #000 .9em, transparent 1em);     /* Íris */
+
+      background-position: 0.6em 0.35em, 0.7em 0.6em; /* Posição dos olhos */
+      background-size: 2.75em 2em; /* Tamanho dos olhos */
+      background-repeat: repeat-x;
+
+      animation: eyes 2s cubic-bezier(.8, .02, .2, .96) infinite alternate; /* 👀 Piscar animado */
+    }
+
+    /* 👂 Orelhas – forma básica compartilhada */
+    .baby-yoda::before,
+    .baby-yoda::after {
+      content: '';
+      display: block;
+      width: 5em;
+      height: 1.5em;
+      background: var(--pink); /* Interior das orelhas */
+      border-top: solid .5em var(--green); /* Borda verde para integrar com a cabeça */
+      position: absolute;
+      top: 0.5em;
+      z-index: -1;
+      border-radius: 2em 1em;
+    }
+
+    /* 👂 Orelha esquerda (lado direito do CSS) */
+    .baby-yoda::before {
+      transform-origin: center right;
+      transform: rotate(0deg);
+      animation: ear-left 2s cubic-bezier(.8, .02, .2, .96) infinite alternate;
+      right: 100%;
+      margin-right: -1em;
+      border-bottom-left-radius: 9em 4em;
+    }
+
+    /* 👂 Orelha direita (lado esquerdo do CSS) */
+    .baby-yoda::after {
+      transform-origin: center left;
+      transform: rotate(0deg);
+      animation: ear-right 2s cubic-bezier(.8, .02, .2, .96) infinite alternate;
+      left: 100%;
+      margin-left: -1em;
+      border-bottom-right-radius: 9em 4em;
+    }
+
+    /* Animação dos olhos */
+    @keyframes eyes {
+      to {
+        background-size: 2.75em 1.5em; /* Pisca sutil */
+      }
+    }
+
+    /* Animação da orelha esquerda */
+    @keyframes ear-left {
+      to {
+        transform: rotate(20deg); /* Gira levemente para cima */
+      }
+    }
+
+    /* Animação da orelha direita */
+    @keyframes ear-right {
+      to {
+        transform: rotate(-20deg); /* Gira levemente para cima */
+      }
+    }

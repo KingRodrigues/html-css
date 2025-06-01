@@ -1,0 +1,133 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Cinzel:wght@400..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root {
+    --red: #BF232C;
+    --gray: #7B8487;
+
+}
+
+* {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: #e0e0e0;
+}
+
+body {
+    background-color: var(--gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  pointer-events: none; /* para não bloquear cliques */
+  z-index: 0; /* atrás do conteúdo */
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 800px;
+    min-height: 700px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+    color: white;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 35px;
+}
+
+q {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: lighter;
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main img {
+    display: block;
+    max-width:100%;
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    object-fit: cover; /* Faz a imagem preencher o contêiner, cortando o excesso para manter a proporção */
+}
+
+h2 {
+    text-align: center;
+    font-family: "Cinzel", serif;
+}
+
+p {
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    padding: 13px;
+}
+
+#nome {
+    font-style: italic;
+}
+
+p, li {
+    margin-bottom: 5px;
+}
+
+ul, li {
+    text-align: justify;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nextprev {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 10px; /* espaço entre os botões */
+}
+
+.nextprev a {
+    flex: 1; /* todos ocupam o mesmo espaço */
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.nextprev a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

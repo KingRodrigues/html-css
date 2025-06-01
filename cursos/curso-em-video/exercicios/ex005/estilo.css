@@ -1,0 +1,21 @@
+section { /* Centralização */
+    height: 100vh; /* Altura da tela */
+    width: 100vw; /* Largura da tela */
+    
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column; /* Empilha Verticalmente */
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center; /* Centraliza na vertical */
+    text-align: center; /* Garante centralização do texto se for multilinha */
+}
+
+div#google {
+    font-family: 'Poppins', sans-serif;
+    color: #4784f9;
+    font-size: 90px;
+    margin: 0;
+}
+
+img#superman {
+    height: 350px;
+}

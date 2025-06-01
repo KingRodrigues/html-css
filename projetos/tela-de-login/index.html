@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morningstar Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Biblioteca de ícones em formato de fonte -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container"> <!-- Define o conteúdo principal da página. A classe "container" é usada para aplicar estilos via CSS. -->
+        <form> <!-- Cria um formulário HTML, usado para coletar dados do usuário e enviá-los a um servidor. -->
+            <h1>Login Morningstar</h1> <!-- Título principal do formulário. O <h1> é usado para destacar o cabeçalho de maior importância. -->
+            <div class="input-box"> <!-- Caixa de entrada de dados personalizada com estilo próprio. Agrupa o campo de input e o ícone. -->
+                <input placeholder="Usuário" type="email"> <!-- Cria um campo de entrada do tipo e-mail. placeholder: texto que aparece como dica dentro do input, type: exige que o valor digitado seja um e-mail. -->
+                <i class="bx bxs-user"></i> <!-- Ícone de usuário usando a biblioteca de ícones Boxicons. -->
+            </div>
+            <div class="input-box">
+                <input placeholder="Senha" type="password"> <!-- Campo para digitar a senha. type: oculta o texto digitado com pontos/asteriscos.  -->
+                <i class="bx bxs-lock-alt"></i> <!-- Ícone de cadeado, também da biblioteca Boxicons. -->
+            </div>
+            <div class="lembrar-senha">
+                <label>
+                    <input type="checkbox"> <!-- Cria uma caixa de seleção (checkbox), usada para marcações. -->
+                    Lembrar senha
+                </label>
+                <a href="esqueci-senha">Esqueci senha</a> <!-- Link âncora que redireciona para uma página de recuperação de senha -->
+            </div>
+            
+            <button type="submit" class="login">Login</button> <!-- Botão que envia os dados do formulário. -->
+
+            <div class="link-registro"> <!-- Caixa que contém o texto e link para criar nova conta -->
+                <p>Não tem uma conta? <a href="link-registro">Cadastre-se</a></p> <!-- Parágrafo com um link para redirecionar à página de registro (cadastro) -->
+            </div>
+        </form>
+
+    </main>
+
+</body>
+</html>

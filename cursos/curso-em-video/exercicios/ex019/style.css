@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #6EBAA7;
+    --cor2: #6B8780;
+    --cor3: #445450;
+    --cor4: #3a5f56;
+    --cor5: #17332C;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(46, 43, 43);
+}
+
+#principal {
+    text-align: center;
+    background-color: var(--cor5);
+    color: var(--cor1);
+}
+
+h2 {
+    color: var(--cor5);
+}
+
+.basico {
+    color: var(--cor2);
+}
+
+.intermediario {
+    color: var(--cor3);
+}
+
+.avancado {
+    color: var(--cor4);
+}

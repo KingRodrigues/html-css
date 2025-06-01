@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* importa a fonte 'Josefin Sans' do Google Fonts */
+
+* {
+    margin: 0; /* remove o espaço externo padrão dos elementos */
+    padding: 0; /* remove o espaço interno padrão dos elementos */
+    box-sizing: border-box; /* mantém o tamanho total do elemento (inclui borda e padding dentro da largura e altura definidas) */
+    font-family: "Josefin Sans", sans-serif; /* aplica a fonte 'Josefin Sans', ou uma sans-serif se a fonte não carregar */
+}
+
+body {
+    display: flex; /* ativa o Flexbox para organizar o conteúdo */
+    justify-content: center; /* centraliza o conteúdo horizontalmente na tela */
+    align-items: center; /* centraliza o conteúdo verticalmente na tela */
+    min-height: 100vh; /* o corpo da página ocupa no mínimo 100% da altura da tela (viewport height) */
+    background: url(./imagens/img.jpg); /* define uma imagem como fundo da página */
+    background-size: cover; /* a imagem cobre todo o fundo, mesmo que corte partes */
+    background-position: center; /* centraliza a imagem no fundo */
+}
+
+.container { /* estilo para o elemento principal (geralmente <main>) */
+    width: 420px; /* define a largura da caixa */
+    background-color: transparent; /* fundo transparente */
+    border: 2px solid rgba(255, 255, 255, .2); /* borda branca semi-transparente */
+    border-radius: 10px; /* bordas arredondadas */
+    color: #fff; /* cor do texto branca */
+    padding: 30px 40px; /* espaçamento interno: 30px vertical, 40px horizontal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2); /* sombra ao redor do elemento */
+    backdrop-filter: blur(6px); /* efeito de desfoque no fundo da caixa */
+}
+
+.container h1 {
+    font-size: 36px; /* tamanho grande para o título */
+    text-align: center; /* centraliza o texto */
+}
+
+.input-box {
+    position: relative; /* permite posicionar elementos filhos de forma absoluta */
+    width: 100%; /* ocupa toda a largura do container pai */
+    height: 50px; /* altura fixa */
+    margin: 30px 0; /* espaço acima e abaixo de 30px */
+}
+
+.input-box input {
+    width: 100%; /* input ocupa toda a largura da caixa */
+    height: 100%; /* altura total da caixa */
+    background-color: transparent; /* sem fundo visível */
+    border: 2px solid rgba(255, 255, 255, .2); /* borda branca semi-transparente */
+    border-radius: 40px; /* bordas bem arredondadas */
+    outline: none; /* remove a borda azul padrão ao focar */
+    font-size: 16px; /* tamanho do texto no input */
+    color: #fff; /* texto branco */
+    padding: 20px 45px 20px 20px; /* espaçamento interno: topo e baixo 20px, direita 45px (por causa do ícone), esquerda 20px */
+}
+
+.input-box input::placeholder {
+    color: #fff; /* cor clara para o texto de sugestão dentro do input */
+}
+
+.input-box i { /* ícone dentro da caixa de input */
+    position: absolute; /* posição em relação ao .input-box */
+    right: 20px; /* distância da borda direita */
+    top: 50%; /* centraliza verticalmente */
+    transform: translateY(-50%); /* ajusta a posição exata para ficar centralizado */
+    font-size: 20px; /* tamanho do ícone */
+}
+
+.lembrar-senha {
+    display: flex; /* organiza os elementos filhos lado a lado */
+    justify-content: space-between; /* separa os itens para as extremidades esquerda e direita */
+    margin: -15px 0 15px; /* margem superior negativa (encosta nos campos), 15px embaixo */
+}
+
+.lembrar-senha label input {
+    accent-color: #fff; /* define a cor do checkbox quando marcado */
+    margin-right: 5px; /* espaço entre o checkbox e o texto */
+}
+
+.lembrar-senha a {
+    text-decoration: none; /* remove o sublinhado padrão do link */
+    color: #fff; /* cor branca para o link */
+}
+
+.lembrar-senha a:hover {
+    text-decoration: underline; /* adiciona sublinhado ao passar o mouse no link */
+}
+
+.login {
+    width: 100%; /* botão ocupa toda a largura */
+    height: 50px; /* altura do botão */
+    background-color: #fff; /* fundo branco */
+    border: none; /* remove a borda padrão */
+    border-radius: 40px; /* bordas arredondadas */
+    cursor: pointer; /* muda o cursor ao passar por cima */
+    font-size: 16px; /* tamanho da fonte */
+    font-weight: 600; /* texto em negrito moderado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1); /* sombra sutil ao redor */
+    margin-top: 20px; /* espaçamento acima do botão */
+}
+
+.login:hover {
+    background-color: transparent; /* fundo transparente no hover */
+    border: 2px solid; /* borda visível no hover */
+    color: #fff; /* texto branco no hover */
+    transition: 0.5s; /* efeito de transição suave */
+}
+
+.link-registro {
+    font-size: 14px; /* tamanho pequeno do texto */
+    text-align: center; /* centraliza o texto */
+    margin: 20px 0 15px; /* espaçamento acima (20px) e abaixo (15px) */
+}
+
+.link-registro a {
+    text-decoration: none; /* sem sublinhado */
+    color: #fff; /* cor branca */
+    font-weight: 600; /* negrito moderado */
+}
+
+.link-registro a:hover {
+    text-decoration: underline; /* sublinhado ao passar o mouse */
+}
