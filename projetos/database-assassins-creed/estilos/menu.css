@@ -42,6 +42,6 @@ ol, li {
 .memorias a:focus {
     text-decoration: underline;
     color: var(--red);
-    margin: 5px;
     outline: none;
+    transform: translateY(-4px);
 }

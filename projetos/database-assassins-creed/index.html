@@ -12,6 +12,16 @@
       font-family: 'VT323', monospace;
       font-size: 30px;
     }
+
+    @keyframes logo {
+        0% {transform: translateY(0px);}
+        50% {transform: translateY(-5px);}
+        100% {transform: translateY(0px);}
+    }
+
+    .titulo {
+        animation: logo 5s ease-in-out alternate infinite;
+    }
     </style>
 </head>
 <body>
