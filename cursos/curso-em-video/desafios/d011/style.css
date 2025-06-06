@@ -1,47 +1,46 @@
-/* Essas configurações vão adicionar o fundo e fazer com que ele sempre ocupe o fundo */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     background: url("img/espaco.jpg");
     background-size: cover;
 }
 
-/* Coloquei meu astronauta dentro de uma div, e centralizei apenas a div */
 div {
-    height: 100vh;
-    width: 100vw;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 98vh;
+    background-image: url("img/astronauta.png");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: center center;
 }
 
-/* Vai dar a impressão de flutuar, ao mesmo tempo que vai centralizar a imagem pra mim #vaiflutuartambém */
 @keyframes it {
     0% {transform: translateY(0px);}
     50% {transform: translateY(-20px);}
     100% {transform: translateY(0px);}
 }
 
-/* O meu astronauta nunca vai passar do tamanho máximo do width, e o animation adiciona o efeito */
-.astronauta {
+div {
     animation: it 5s ease-in-out infinite;
     max-width: 100%;
 }
 
-/* Vai ser a parte responsiva da minha página, não vou comentar todas por serem a mesma coisa */
 @media (max-width: 780px) {
-    .astronauta {
+    div {
         max-width: 80%;
     }
 }
 
 @media (max-width: 480px) {
-    .astronauta {
+    div {
         max-width: 60%;
     }
 }
 
 @media (max-width: 320px) {
-    .astronauta {
+    div {
         max-width: 40%;
     }
 }
