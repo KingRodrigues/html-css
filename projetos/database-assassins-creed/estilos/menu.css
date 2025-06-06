@@ -4,13 +4,14 @@
 
 }
 
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
 body {
     min-height: 100vh;
-    background: url(../imagens/animus-login.png);
+    background-image: url(../imagens/animus-login.png);
     background-size: cover;
     background-position: center;
 }
