@@ -1,35 +1,63 @@
-:root {
-    --red: #BF232C;
-    --gray: #7B8487;
-
+@font-face {
+    font-family: 'assassin';
+    src: url("../fontes/assassin.ttf") format("truetype");
 }
 
+:root {
+    --red: #860f15;
+    --gray: #7B8487;
+}
 
 * {
-    margin: 0;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
+
+
 body {
-    min-height: 100vh;
-    background-image: url(../imagens/animus-login.png);
+    background: white url("../imagens/animus-login.png") left top no-repeat fixed;
     background-size: cover;
-    background-position: center;
 }
 
-p {
-    margin-left: 15px;
-    margin-bottom: 15px;
+p, .memorias a {
+    font-family: 'VT323', monospace;
 }
 
-ol, li {
-    margin-left: 35px ;
+#indice {
+    background-color: #7b84875e;
+    max-width: 650px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px;
+    list-style-position: inside;
+}
+
+@keyframes flutuar {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-5px);}
+    100% {transform: translateY(0px);}
 }
 
 .titulo {
+    font-family: 'assassin', monospace;
+    animation: flutuar 3s ease-in-out infinite alternate;
     font-size: 50px;
-    margin: 20px 35px 15px;
+    text-align: center;
+    margin-top: 5px;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    margin: 15px;
+}
+
+.memorias {
+    margin-left: 15px;
 }
 
 .memorias a {
@@ -39,10 +67,8 @@ ol, li {
     transition: color 1s, transform 1s;
 }
 
-.memorias a:hover,
-.memorias a:focus {
+.memorias a:hover, .memorias a:focus {
     text-decoration: underline;
     color: var(--red);
-    outline: none;
     transform: translateY(-4px);
 }

@@ -10,8 +10,16 @@
   <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
   <style>
     body {
-      background-image: url(../imagens/altair-ac1.png);
-      background-size: cover;
+      background-image: url("../imagens/altair-ac1.png");
+    }
+
+    #imagem {
+      background-image: url(../imagens/altair-profile.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 300px;
+      width: 300px;
+      margin: auto;
     }
 
     h1, h2 {
@@ -24,15 +32,14 @@
   </style>
   </head>
 <body>
-  <div class="overlay"></div>
   <main>
-      <h1>Altaïr Ibn-La'Ahad</h1>
-      <q>Nosso Credo não nos comanda a sermos livres. Ele nos comanda a sermos sábios.</q>
-      <img src="../imagens/altair-profile.png" alt="[imagem de Altaïr]">
-      <h2>Sobre Altaïr em&nbsp;<abbr title="Assassin's Creed 1">AC1</abbr></h2>
-      <p><span id="nome">Altaïr Ibn-La'Ahad</span> é um Assassino habilidoso e arrogante que, após falhar em uma missão crucial, é rebaixado na Ordem. Para recuperar sua honra, ele deve eliminar nove alvos ligados aos Templários. Durante sua jornada, Altaïr descobre conspirações mais profundas e amadurece, questionando cegamente as ordens que recebe. No final, ele confronta e derrota seu próprio mestre, Al Mualim, que havia traído a Irmandade. Altaïr então assume o comando dos Assassinos, iniciando uma nova era para a Ordem.</p>
+      <h1 id="nome-principal">Altaïr Ibn-La'Ahad</h1>
+      <blockquote id="frase" cite="Altaïr Ibn-La'Ahad">Nosso Credo não nos comanda a sermos livres. Ele nos comanda a sermos sábios.</blockquote>
+      <div id="imagem"></div>
+      <h2 class="subtitulo">Sobre Altaïr em&nbsp;<abbr title="Assassin's Creed 1">AC1</abbr></h2>
+      <p><em>Altaïr Ibn-La'Ahad</em> é um Assassino habilidoso e arrogante que, após falhar em uma missão crucial, é rebaixado na Ordem. Para recuperar sua honra, ele deve eliminar nove alvos ligados aos Templários. Durante sua jornada, Altaïr descobre conspirações mais profundas e amadurece, questionando cegamente as ordens que recebe. No final, ele confronta e derrota seu próprio mestre, Al Mualim, que havia traído a Irmandade. Altaïr então assume o comando dos Assassinos, iniciando uma nova era para a Ordem.</p>
 
-      <h2>Habilidades</h2>
+      <h2 class="subtitulo">Habilidades</h2>
       <ul>
         <li>Especialista em Combate (Armado e Desarmado)</li>
         <li>Assassino Silencioso</li>
