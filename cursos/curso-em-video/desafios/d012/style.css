@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 :root {
-    --fonte1: "Passion One", sans-serif;
-    --fonte2: "Sriracha", sans-serif;
+    --fonte1: "Passion One", cursive;
+    --fonte2: "Sriracha", cursive;
+    --fonte3: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
@@ -11,14 +12,12 @@
     padding: 0px;
 }
 
-body {
-    height: 98vh;
-    background-image: url("imagens/background001.jpg"), url("imagens/background002.jpg");
-    background-size: cover;
-    background-repeat: repeat-x;
-    background-attachment:fixed;
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte3);
+    font-size: 1em;
 }
-
 main {
     display: flex;
     flex-direction: column;
@@ -26,14 +25,19 @@ main {
 }
 
 header {
-    padding: 30px;
     text-align: center;
-    background-color: black;
+    background-color: black; 
 }
 
-.titulo {
-    font-size: 5em;
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 6vw;
     font-family: var(--fonte1);
+}
+
+header > p {
+    padding-bottom: 50px;
 }
 
 header p {
@@ -47,6 +51,7 @@ header p {
 a {
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 a:hover {
@@ -55,27 +60,55 @@ a:hover {
 }
 
 article {
-    padding: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 2vw;
     font-family: var(--fonte2);
-    font-size: 2em;
+}
+
+article > p {
+    padding-bottom: 2em;
+}
+
+#img01 {
+    background-image: url("imagens/background001.jpg");
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#img02 {
+    background-image: url("imagens/background002.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
 }
 
 .branco {
     background-color: white;
-    color: rgb(0, 0, 0);
+    color: black;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.445);
 }
 
-.transparente p {
+.transparente {
+    background-color: rgb(51, 51, 51);
+    box-shadow: inset 6px 6px 13px 0px black;
+}
+
+.transparente > p {
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.308);
-    padding: 10px;
     border-radius: 10px;
     max-width: max-content;
+    text-shadow: 2px 2px 0px black;
 }
 
 footer {
     background-color: black;
-    padding: 20px;
+    padding: 10px;
     font-size: 1.2em;
     text-align: center;
 }
