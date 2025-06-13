@@ -13,59 +13,27 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Arial Narrow', Arial, sans-serif;
-    color: #e0e0e0;
 }
 
 body {
-    background-color: var(--gray);
-    background-position: center top;
+    background-color: #7B8487;
+    background-image: url("../imagens/altair-ac1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 main {
-    max-width: 500px;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.267);
+    width: 600px;
     margin: auto;
-    background-color: #1f1f1f7e;
+    margin-top: 5%;
 }
 
-#nome-principal {
+header > h1 {
+    font-family: 'assassin';
+    font-variant: small-caps;
+    font-size: 35px;
     text-align: center;
-    font-family: 'assassin', sans-serif;
-    padding: 10px;
-}
-
-#frase {
-    margin: auto;
-    text-align: center;
-    display: block;
-    max-width: 350px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.subtitulo {
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    padding: 15px;
-}
-
-p {
-    text-align: justify;
-}
-
-ul {
-    list-style-position: inside;
-}
-
-footer {
-    text-align: center;
-    gap: 20px;
-    flex: 1px;
 }
