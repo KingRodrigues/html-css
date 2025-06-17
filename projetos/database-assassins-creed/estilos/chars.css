@@ -16,6 +16,7 @@
 }
 
 body {
+    font-family: sans-serif;
     background-color: #7B8487;
     background-image: url("../imagens/altair-ac1.png");
     background-repeat: no-repeat;
@@ -29,11 +30,53 @@ main {
     width: 600px;
     margin: auto;
     margin-top: 5%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 header > h1 {
     font-family: 'assassin';
     font-variant: small-caps;
-    font-size: 35px;
+    font-size: 2.3em;
     text-align: center;
+}
+
+header > q {
+    display: block;
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: center;
+    padding: 0px 10px 15px;
+}
+
+#imagem-perfil {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    border-radius: 20px;
+    padding-bottom: 15px;
+}
+
+.info {
+    max-width: 600px;
+}
+
+#info-bas {
+    margin: 0px;
+    padding: 0px;
+}
+
+section > h2 {
+    font-variant: small-caps;
+    background-color: #7b848746;
+    padding: 0px 5px;
+    border-radius: 5px;
+    max-width: max-content;
+}
+
+section > p {
+    text-align: justify;
+    padding-bottom: 15px;
 }
